@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: airtongessner/podinfo
-      tag: dev-6o84iw6f
+      tag: dev-qfelwjyc
     replicaCount: 1
     hpa:
       enabled: false
