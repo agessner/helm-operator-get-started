@@ -6,17 +6,17 @@ metadata:
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:dev-*
+    filter.fluxcd.io/cautomatedhart-image: glob:dev-*
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:agessner/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
-      tag: dev-hdtwcel9
+      repository: airtongessner/podinfo
+      tag: dev-6o84iw6f
     replicaCount: 1
     hpa:
       enabled: false
